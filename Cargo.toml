@@ -13,11 +13,11 @@ panic-halt              = "0.2.0"
 cortex-m                = "0.6.0"
 #heapless                = "0.5.0"
 rtt-target = { version = "0.2.0", features = ["cortex-m"] }
-cortex-m-rtic = { git = "https://github.com/rtic-rs/cortex-m-rtic", branch = "new_monotonic" }
+cortex-m-rtic = { version = "0.6.0-alpha.2" }
 
 [dependencies.stm32l4xx-hal]
-git = "https://github.com/stm32-rs/stm32l4xx-hal"
-branch = "rtic_0.6_monotonic"
+git = "https://github.com/datdenkikniet/stm32l4xx-hal.git"
+branch = "rtic_monotonic"
 features = ["stm32l4x2", "rt"]
 
 
